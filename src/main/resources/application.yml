@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_mgmt
+    username: postgres
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgresSQLDialect
+      format_sql: true
+
+
+  flyway:
+    enabled: true
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rzwanilyas.wiz@gmail.com
+    from: rzwanilyas.wiz@gmail.com
+    password: nptounfvfcybwyyg
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+app:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
+  url:
+    reset-password: http://localhost:8080/reset-password
+  email:
+    forget-password.subject: Reset you password
+    new-account.subject: A new account created , Set your password
