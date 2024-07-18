@@ -28,7 +28,7 @@ spring:
     port: 587
     username: rzwanilyas.wiz@gmail.com
     from: rzwanilyas.wiz@gmail.com
-    password: nptounfvfcybwyyg
+    password:
     properties:
       mail:
         smtp:

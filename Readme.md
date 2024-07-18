@@ -44,14 +44,14 @@ After running the application, it will be accessible at `http://localhost:8080`.
     - Authentication Operations:
         - Login
         - Signup
-        - Forget Password
+        - Forget Password (via email)
         - Reset Password
         - Update Password
     - User Administration:
         - Activate/Deactivate Users
         - List Users with Search and Pagination
         - Update User Details
-        - Send Reset Password Link
+        - Send Reset Password Link (via email)
 3. Task Management
     - Create Tasks
     - Update Tasks
